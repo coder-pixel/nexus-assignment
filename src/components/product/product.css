@@ -1,0 +1,122 @@
+.product {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    /* background-color: aqua; */
+}
+
+
+/*  */
+.product .product-img {
+    flex: 1.5;
+    position: relative;
+    /* background-color: antiquewhite; */
+}
+.product-img .wishlist{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #fff;
+    padding: 5px 7px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*  */
+
+
+/*  */
+.product .product-desc {
+    flex: 1;
+    height: auto;
+    background-color: rgb(235, 233, 233);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.product-desc h2 {
+    font-size: 16px;
+}
+.product-desc .product-extra {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 14px;
+    margin-left: 10px;
+    color: #222;
+}
+.product-extra h4 {
+    font-size: 14px;
+    color: #222;
+}
+.product-extra .reviews {
+    display: flex;
+    align-items: flex-end;
+}
+
+.product-extra .rating {
+    padding: 4px 8px;
+    background-color: #222;
+    color: #eee;
+    font-size: 14px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.product-extra .rating i {
+    font-size: 12px;
+}
+.product-extra .review {
+    color: rgb(82, 81, 81);
+    font-weight: 100;
+}
+/*  */
+
+
+
+.product .product-actions {
+    flex: 1.5;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.add-minus-quantity {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.add-minus-quantity i, .add-minus-quantity span{
+    border: 1px solid #222;
+    padding: 5px 12px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+.add-minus-quantity i{
+    cursor: pointer;
+}
+.add-minus-quantity i:active{
+    background-color: #222;
+    color: #fff;
+}
+.product-actions .remove-item, .product-actions .price{
+    font-size: 14px;
+}
+.product-actions .price span{
+    font-size: 12px;
+}
+.product-actions .remove-item{
+    color: red;
+    cursor: pointer;
+}
+/* 
+@media screen and (max-width: 880px) {
+    
+} */
